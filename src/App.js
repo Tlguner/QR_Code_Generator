@@ -34,7 +34,7 @@ function App() {
     <div className="App">
       <div className="Card">
         <form action="" onSubmit={handleSubmit}>
-          <h1>QR Code Generator</h1>
+          <h1 className="header">QR Code Generator</h1>
 
           <input
             placeholder="example.com"
