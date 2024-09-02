@@ -29,6 +29,12 @@ function App() {
         console.error(err);
       });
   };
+  /* press enter*/
+  const handleEnter = (e) => {
+    if (e.keyCode == 13) {
+      handleClick();
+    }
+  };
 
   return (
     <div className="App">
@@ -40,6 +46,7 @@ function App() {
             placeholder="example.com"
             className="URL"
             type="text"
+            onKeyDown={handleEnter}
             onChange={(e) => setInput(e.target.value)}
           />
 
